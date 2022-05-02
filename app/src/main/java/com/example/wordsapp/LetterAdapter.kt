@@ -1,14 +1,12 @@
 package com.example.wordsapp
 
 import android.content.Intent
-import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
-import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
+import com.example.wordsapp.DetailActivity.Companion.LETTER
 
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
@@ -23,7 +21,7 @@ class LetterAdapter :
      * Provides a reference for the views needed to display items in your list.
      */
     class LetterViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        val button = view.findViewById<Button>(R.id.button_item)
+        val button: Button = view.findViewById(R.id.button_item)
     }
 
     override fun getItemCount(): Int {
@@ -52,7 +50,7 @@ class LetterAdapter :
             val context = holder.view.context
             val intent = Intent(context, DetailActivity::class.java)
 
-            intent.putExtra("letter", holder.button.text.toString())
+            intent.putExtra(LETTER, holder.button.text.toString())
             context.startActivity(intent)
         }
     }

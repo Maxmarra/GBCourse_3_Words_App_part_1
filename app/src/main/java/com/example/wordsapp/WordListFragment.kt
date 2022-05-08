@@ -18,10 +18,17 @@ class WordListFragment : Fragment() {
 
     private var _binding:FragmentWordListBinding? = null
     private val binding get() = _binding!!
+
     lateinit var wordRecyclerView: RecyclerView
+
+    private lateinit var letter: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        arguments?.let{
+            letter = it.getString(LETTER).toString()
+        }
     }
 
     override fun onCreateView(
@@ -39,7 +46,7 @@ class WordListFragment : Fragment() {
         wordRecyclerView = binding.recyclerView
         wordRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        val letter = activity?.intent?.extras?.getString(LETTER).toString()
+
         wordRecyclerView.adapter = WordAdapter(letter, this.requireContext())
         super.onViewCreated(view, savedInstanceState)
     }

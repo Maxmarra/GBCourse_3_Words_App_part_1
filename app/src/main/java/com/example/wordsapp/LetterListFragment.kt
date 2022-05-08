@@ -65,7 +65,6 @@ class LetterListFragment : Fragment() {
     }
 
     private fun setIcon(menuItem: MenuItem) {
-        if (menuItem == null) return
         menuItem.icon =
             if (isLinearLayout)
                 ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_linear_layout)

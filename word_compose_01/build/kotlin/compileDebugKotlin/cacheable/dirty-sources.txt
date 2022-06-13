@@ -1,0 +1,5 @@
+D:\development\AndroidStudioProjects\AndroidStudioProjects\google_andr_basics\Navigation_03\WordsApp\word_compose_01\src\main\java\com\example\word_compose_01\ui\theme\Theme.kt
+D:\development\AndroidStudioProjects\AndroidStudioProjects\google_andr_basics\Navigation_03\WordsApp\word_compose_01\src\main\java\com\example\word_compose_01\ui\theme\Color.kt
+D:\development\AndroidStudioProjects\AndroidStudioProjects\google_andr_basics\Navigation_03\WordsApp\word_compose_01\src\main\java\com\example\word_compose_01\ui\theme\Shape.kt
+D:\development\AndroidStudioProjects\AndroidStudioProjects\google_andr_basics\Navigation_03\WordsApp\word_compose_01\src\main\java\com\example\word_compose_01\MainActivity.kt
+D:\development\AndroidStudioProjects\AndroidStudioProjects\google_andr_basics\Navigation_03\WordsApp\word_compose_01\src\main\java\com\example\word_compose_01\ui\theme\Type.kt

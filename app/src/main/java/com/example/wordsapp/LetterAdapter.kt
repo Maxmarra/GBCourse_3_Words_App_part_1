@@ -21,8 +21,8 @@ class LetterAdapter :
     /**
      * Provides a reference for the views needed to display items in your list.
      */
-    class LetterViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        val button = view.findViewById<Button>(R.id.button_item)
+    class LetterViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+        val button: Button = view.findViewById<Button>(R.id.button_item)
     }
 
     override fun getItemCount(): Int {

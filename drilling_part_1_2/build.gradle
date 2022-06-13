@@ -33,6 +33,7 @@ android {
     buildFeatures{
         viewBinding true
     }
+    namespace 'com.example.drilling_part_1_2'
 }
 
 dependencies {

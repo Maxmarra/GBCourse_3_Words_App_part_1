@@ -1,6 +1,10 @@
 package com.example.wordsapp
 
 import android.content.Context
+import android.content.Intent
+import android.content.Intent.*
+import android.net.Uri
+import android.provider.MediaStore.ACTION_IMAGE_CAPTURE
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,7 +64,11 @@ class WordAdapter(private val letterId: String, context: Context) :
 
         // Set the text of the WordViewHolder
         holder.button.text = item
-
+        holder.button.setOnClickListener {
+            val queryUrl: Uri = Uri.parse("${DetailActivity.SEARCH_PREFIX}${item} перевод")
+            val intent = Intent(ACTION_VIEW, queryUrl)
+            context.startActivity(intent)
+        }
 
 
     }

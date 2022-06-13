@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="words">
-        <item>aargh</item>
-        <item>about</item>
-        <item>acidic</item>
-        <item>acne</item>
-        <item>acrid</item>
-        <item>acute</item>
-        <item>alphabet</item>
-        <item>anchor</item>
-        <item>anecdote</item>
-        <item>animal</item>
-        <item>automobile</item>
-        <item>awesome</item>
+        <item>Austria</item>
+        <item>Antigua</item>
+        <item>Argentina</item>
+
         <item>back</item>
         <item>balloon</item>
         <item>basket</item>

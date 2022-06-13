@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         recyclerView = binding.recyclerView
-        // Sets the LinearLayoutManager of the recyclerview
 
+        // Sets the LinearLayoutManager of the recyclerview
         chooseLayout()
     }
 
@@ -71,11 +71,9 @@ class MainActivity : AppCompatActivity() {
                 // Sets layout and icon
                 chooseLayout()
                 setIcon(item)
-
                 return true
             }
             //  Otherwise, do nothing and use the core event handling
-
             // when clauses require that all possible paths be accounted for explicitly,
             //  for instance both the true and false cases if the value is a Boolean,
             //  or an else to catch all unhandled cases.

@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "WordsApp"
 include ':app'
-include ':drilling_part_1'
